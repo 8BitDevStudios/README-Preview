@@ -1,13 +1,19 @@
-# README Preview
+# README Generator
 
-A tiny browser based tool for writing markdown and instantly previewing README files.
+A tiny terminal-based Python tool that generates a README.md ( and optionally an MIT LICENSE ) from simple prompts.
 
 ## Usage
 
-Open index.html in any browser and start typing Markdown.
+Run the script and fill in the prompts. Your files will be created inside the output folder.
+
+```bash
+python readme_generator.py
+````
 
 ## Installation
+
 ```bash
-git clone https://github.com/8BitDevStudios/README-Preview
-cd README-Preview
-````
+git clone https://github.com/8bitDevStudios/readme-gen
+cd readme-gen
+python readme_generator.py
+```
