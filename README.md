@@ -1,2 +1,13 @@
-# README-Preview
-A tiny browser based tool to write markdown and instantly preview README files!
+# README Preview
+
+A tiny browser based tool for writing markdown and instantly previewing README files.
+
+## Usage
+
+Open index.html in any browser and start typing Markdown.
+
+## Installation
+```bash
+git clone https://github.com/8BitDevStudios/README-Preview
+cd README-Preview
+````
