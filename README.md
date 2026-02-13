@@ -2,6 +2,8 @@
 
 A tiny browser based tool for writing markdown and instantly previewing README files.
 
+![Preview](assets/screenshot.png)
+
 ## Usage
 
 Open index.html in any browser and start typing Markdown.
