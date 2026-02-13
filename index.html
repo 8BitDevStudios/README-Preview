@@ -10,13 +10,16 @@ body{margin:0;display:grid;grid-template-columns:1fr 1fr;height:100vh;background
 textarea{border:0;outline:0;resize:none;padding:14px;background:#0f1621;color:#e6edf3;font:13px ui-monospace}
 #p{padding:14px;overflow:auto}
 pre,code{background:#0f1621;padding:6px}
+pre code.language-bash,pre code.language-sh{white-space:pre-wrap;word-break:break-word;display:block;overflow-x:auto;max-width:100%}
+pre{white-space:pre-wrap;word-wrap:break-word;max-width:100%}
 </style>
 </head>
 <body>
 <textarea id="m"># README</textarea>
 <div id="p"></div>
 <script>
-m.oninput=()=>p.innerHTML=DOMPurify.sanitize(marked.parse(m.value))
+marked.setOptions({breaks:true,gfm:true,headerIds:false})
+m.oninput=()=>{try{p.innerHTML=DOMPurify.sanitize(marked.parse(m.value))}catch(e){p.innerHTML='Error parsing markdown'}}
 m.oninput()
 </script>
 </body>
